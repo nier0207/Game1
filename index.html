@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Finish the Code Game - Java Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="landing-container">
+            <h1>🎮 Finish the Code Game</h1>
+            <p>Welcome to the Finish the Code Game!<br>Enjoy the game!</p>
+
+            <div class="language-cards">
+                <button class="lang-btn java" id="java">☕ Java Language</button>
+                <button class="lang-btn csharp" id="csharp" disabled>🔷 C# Language (Coming Soon)</button>
+                <button class="lang-btn web" id="web" disabled>🌐 Web Development (Coming Soon)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="game-page" id="gamePage" style="display: none;">
+        <div class="game-container">
+
+            <button class="back-btn" id="backMenu">← Back</button>
+            <!-- Title -->
+            <h1 class="game-title">Finish the Code</h1>
+
+                <div class="game-stats">
+                    <div class="level" id="levelDisplay">Level 1/8</div>
+                    <div class="score" id="scoreDisplay">⭐ Score: 0</div>
+                </div>
+            
+            <hr>
+            
+            
+            <button class="hint-btn" id="hintBtn">
+                        Hint
+                        <span class="hint-count" id="hintCount">2</span>
+                    </button>
+            <!-- Code Container -->
+            <div class="code-container" id="codeDisplay">
+                // Click Java Language to start
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider">
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <label>Input the missing code here:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="codeInput" placeholder="Type the missing code...">
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn submit-btn" id="submit">✓ Submit Answer</button>
+                <button class="btn next-btn" id="nextLevel">➡ Next Level</button>
+                <button class="btn reset-btn" id="reset">↻ Reset Game</button>
+            </div>
+            
+            <!-- Message and Hint Areas -->
+            <div id="messageArea"></div>
+            <div id="hintArea"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
